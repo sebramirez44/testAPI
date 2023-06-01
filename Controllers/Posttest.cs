@@ -12,7 +12,8 @@ public class Posttest : ControllerBase
     [HttpPost(Name = "PostRequest")]
     public IActionResult Post()
     {
-        return Ok();
+        var response = new {login = true};
+        return Ok(response);
 
     }
 }
